@@ -23,11 +23,11 @@ class MainActivity : AppCompatActivity() {
          */
         //MainActivity에서 listView를 Adapter로 넣어주는 과정
 
-        val list_item = mutableListOf<String>()
+        val list_item = mutableListOf<ListViewModel>()
 
-        list_item.add("A")
-        list_item.add("B")
-        list_item.add("C")
+        list_item.add(ListViewModel("a","b"))
+        list_item.add(ListViewModel("c","d"))
+        list_item.add(ListViewModel("e","f"))
 
         val listView = findViewById<ListView>(R.id.mainlistview)
 
